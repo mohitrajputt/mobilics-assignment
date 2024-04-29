@@ -8,12 +8,12 @@ demonstrating proficiency in UI/UX design and web development technologies.
 
 ## File Structure
 
-├── src/
-│   ├── components/
-│   │   ├── about/
-│   │   │   ├── About.jsx         # About component JSX file
-│   │   │   └── About.module.css  # About component CSS module file
-│   │   ├── footer/
+├── src/.
+│   ├── components/.
+│   │   ├── about/.
+│   │   │   ├── About.jsx         # About component JSX file.
+│   │   │   └── About.module.css  # About component CSS module file.
+│   │   ├── footer/.
 │   │   │   ├── Footer.jsx        # Footer component JSX file
 │   │   │   └── Footer.module.css # Footer component CSS module file
 │   │   ├── jobcard/
