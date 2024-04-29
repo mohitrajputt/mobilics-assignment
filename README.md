@@ -6,34 +6,6 @@ The objective of this assignment is to evaluate your ability to create a visuall
 user-friendly website focused on showcasing work opportunities in Japan while
 demonstrating proficiency in UI/UX design and web development technologies.
 
-## File Structure
-
-├── src/.
-│   ├── components/.
-│   │   ├── about/.
-│   │   │   ├── About.jsx         # About component JSX file.
-│   │   │   └── About.module.css  # About component CSS module file.
-│   │   ├── footer/.
-│   │   │   ├── Footer.jsx        # Footer component JSX file
-│   │   │   └── Footer.module.css # Footer component CSS module file
-│   │   ├── jobcard/
-│   │   │   ├── JobCard.jsx       # JobCard component JSX file
-│   │   │   └── JobCard.module.css# JobCard component CSS module file
-│   │   ├── main/
-│   │   │   ├── Main.jsx          # Main component JSX file
-│   │   │   └── Main.module.css   # Main component CSS module file
-│   │   └── navbar/
-│   │       ├── Navbar.jsx        # Navbar component JSX file
-│   │       └── Navbar.module.css # Navbar component CSS module file
-│   │   
-│   ├── app.js                    # App entry file
-│   ├── data.js                   # Data file (job listings)
-│   └── index.js                  # Index file
-│
-└── README.md                     # Readme file explaining the source code
-
-
-
 ### `npm start`
 
 Runs the app in the development mode.\
