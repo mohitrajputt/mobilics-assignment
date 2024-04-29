@@ -1,0 +1,242 @@
+.theme {
+  background: url('https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=1492&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  position: relative;
+  left: 100px;
+  width: 40%;
+  font-family: monospace;
+}
+
+.heroContent p {
+  width: fit-content;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  margin: 0;
+  position: relative;
+  bottom: -14px;
+  left: 7px;
+}
+
+.heroContent h1 {
+  font-size: 4rem;
+  margin: 0px 0 32px 0;
+  color: white;
+  text-shadow: 5px 3px #232434;
+  text-transform: uppercase;
+}
+
+.buttonLearnMore {
+  width: 12rem;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+.icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.icon::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.buttonText {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  /* text-transform: uppercase; */
+}
+
+a:hover .circle {
+  width: 100%;
+}
+
+a:hover .icon {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+a:hover .buttonText {
+  color: #fff;
+}
+
+/* .heroContent button{
+    width: 140px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: white;
+    color: #232434;
+    font-weight: 600;
+    border: none;
+} */
+
+.jobSection {
+  margin: auto;
+  position: relative;
+  padding: 20px 10%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.jobheading {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 2px #232434;
+  font-size: 1.4rem;
+  /* text-decoration: underline; */
+  text-underline-offset: 15px;
+}
+
+.searchBox{
+  margin: 42px 0;
+}
+
+.searchBox input{
+  width: 500px;
+  height: 40px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  outline: none;
+  color: gray;
+}
+
+.jobList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jobsectionVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  border: none;
+}
+
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 20px 0;
+  background: whitesmoke;
+  white-space: nowrap;
+  position: relative;
+  border-bottom: 2px solid white;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logosSlide {
+  animation-play-state: paused;
+}
+
+.logosSlide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logosSlide img {
+  height: 30px;
+  margin: 0 40px;
+}
+
+@media (max-width: 968px)  {
+  .hero{
+    height: 60vh;
+  }
+  .heroContent {
+    left: 60px;
+    width: 80%;
+  }
+  .heroContent p {
+    font-size: 0.8rem;
+    bottom: 0;
+  }
+  .heroContent h1{
+    font-size: 2.3rem;
+  }
+  .searchBox input{
+    width: 80%;
+  }
+}
